@@ -39,13 +39,13 @@ python manage.py runserver
 ```
 * fuseki数据库中添加数据
 ```
-	把tdb_drug_new文件夹上传到fuseki数据库中
-	命令 fuseki-server --loc=path1 /db
-	path1是tdb_drug_new的路径，db是数据库名称
+把tdb_drug_new文件夹上传到fuseki数据库中
+命令 fuseki-server --loc=path1 /db
+path1是tdb_drug_new的路径，db是数据库名称
 ```
-*修改jena_sparql_endpoint.py文件
+* 修改jena_sparql_endpoint.py文件
 ```
-	endpoint_url='http://localhost:3030/ds/query' 把它修改为当前数据库中的路径
+endpoint_url='http://localhost:3030/ds/query' 把它修改为当前数据库中的路径
 ```
 
 # 参考
