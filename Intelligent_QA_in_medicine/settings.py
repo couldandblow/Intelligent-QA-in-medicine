@@ -49,7 +49,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'KGQA_Based_On_medicine.urls'
+ROOT_URLCONF = 'Intelligent_QA_in_medicine.urls'
 
 TEMPLATES = [
     {
@@ -67,7 +67,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'KGQA_Based_On_medicine.wsgi.application'
+WSGI_APPLICATION = 'Intelligent_QA_in_medicine.wsgi.application'
 
 
 # Database
@@ -136,6 +136,6 @@ from kgqa.KB_query import question2sparql
 # TODO 连接Fuseki服务器。
 fuseki = jena_sparql_endpoint.JenaFuseki()
 # TODO 初始化自然语言到SPARQL查询的模块，参数是外部词典列表。
-q2s = question2sparql.Question2Sparql(['D:/Fdisk/pythonproject/KGQA-Based-On-medicine-master/kgqa/KB_query/dict/jibing_pos_name.txt',
-                                       'D:/Fdisk/pythonproject/KGQA-Based-On-medicine-master/kgqa/KB_query/dict/drug_pos_name.txt',
-                                       'D:/Fdisk/pythonproject/KGQA-Based-On-medicine-master/kgqa/KB_query/dict/symptom_pos.txt'])
+q2s = question2sparql.Question2Sparql(['D:/projectcollection/python/pythonprojects/Intelligent-QA-in-medicine/kgqa/KB_query/dict/jibing_pos_name.txt',
+                                       'D:/projectcollection/python/pythonprojects/Intelligent-QA-in-medicine/kgqa/KB_query/dict/drug_pos_name.txt',
+                                       'D:/projectcollection/python/pythonprojects/Intelligent-QA-in-medicine/kgqa/KB_query/dict/symptom_pos.txt'])
