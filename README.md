@@ -36,14 +36,17 @@ python query_main.py
 * 在项目根目录下运行manage.py,开启项目的web模式
 ```
 python manage.py runserver
-
-fuseki数据库中添加数据
+```
+* fuseki数据库中添加数据
+```
 	把tdb_drug_new文件夹上传到fuseki数据库中
 	命令 fuseki-server --loc=path1 /db
 	path1是tdb_drug_new的路径，db是数据库名称
-修改jena_sparql_endpoint.py文件
-	endpoint_url='http://localhost:3030/ds/query' 把它修改为当前数据库中的路径
-可以访问了
 ```
+*修改jena_sparql_endpoint.py文件
+```
+	endpoint_url='http://localhost:3030/ds/query' 把它修改为当前数据库中的路径
+```
+
 # 参考
 [基于 REfO 的 KBQA 实现及示例](http://www.openkg.cn/tool/refo-kbqa)
